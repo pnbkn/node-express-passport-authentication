@@ -6,10 +6,10 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "webpack": "webpack",
-    "webpack:dev": "npm run webpack -- --watch --mode=development",
+    "webpack:dev": "webpack --watch --mode=development",
     "start:dev": "npm run webpack:dev & nodemon server.js --ignore dist/",
     "start": "node ./server/server.js",
-    "build": "npm run webpack"
+    "postinstall": "npm run webpack"
   },
   "babel": {
     "presets": [
@@ -32,7 +32,8 @@
     "@material-ui/icons": "^4.9.1",
     "axios": "^0.19.2",
     "express": "^4.17.1",
-    "node-modules": "^1.0.1"
+    "node-modules": "^1.0.1",
+    "webpack-dev-server": "^3.11.0"
   },
   "devDependencies": {
     "@babel/core": "^7.6.4",

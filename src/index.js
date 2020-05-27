@@ -41,7 +41,7 @@ class App extends React.Component{
           <LockOutlinedIcon />
         </Avatar>
         <Typography component="h1" variant="h5">
-          Sign in
+          Passport Authentication
         </Typography>
         <form className={"form"} noValidate>
           <TextField
@@ -66,10 +66,11 @@ class App extends React.Component{
             id="password"
             autoComplete="current-password"
           />
-          <FormControlLabel
+          <br/>
+          {/* <FormControlLabel
             control={<Checkbox value="remember" color="primary" />}
             label="Remember me"
-          />
+          /> */}
            <br/>
           <Button
             type="submit"
