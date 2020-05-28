@@ -24,3 +24,11 @@
     margin: 50px;
     height: 50px;
   }
+  .root {
+    width: 100%;
+    max-width: 36ch;
+    background-color: white;
+  }
+  .inline {
+    display: inline;
+  }
