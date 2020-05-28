@@ -7,9 +7,10 @@ const {User} = models;
 router.get('/users', async (req, res, next)=>{
     try{ 
        //If user session is admin, show everything
-        User.findAll({
-            attributes: ["username", "email"]
-          })
+        // User.findAll({
+        //     attributes: ["username", "email"]
+        //   })
+        User.findAll()
         .then(users => res.send(users))
     }
     catch (e) {

@@ -1,4 +1,6 @@
 const Sequelize = require("sequelize");
+const hash = require("./hash");
+
 const {
     TEXT,
     STRING,
@@ -52,25 +54,25 @@ const User = conn.define('user', {
         {
           username: "madman",
           email: "madman@gmail.com",
-          password: "MAD",
+          password: hash("MAD"),
           isAdmin: true
         },
         {
           username: "applover",
           email: "applover@gmail.com",
-          password: "APP",
+          password: hash("appL"),
           isAdmin: true
         },
         {
           username: "me",
           email: "me@gmail.com",
-          password: "ME",
+          password: hash("Me"),
           isAdmin: false
         },
         {
           username: "yesno",
           email: "yesno@gmail.com",
-          password: "YES",
+          password: hash("YESN"),
           isAdmin: false
         }
       ];
